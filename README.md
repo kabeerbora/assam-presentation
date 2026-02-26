@@ -20,7 +20,6 @@ This presentation examines how Assam's historical trajectory—from the pre-colo
 - Colonial Rupture and Monetization
 - Educational Bias and Rent-Seeking
 - Ethno-Nationalism as Rent Protection
-- Fiscal Crisis and Development Constraints
 
 ## Citation
 
