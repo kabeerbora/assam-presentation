@@ -15,6 +15,7 @@
 \usepackage{ragged2e}
 \usepackage{etoolbox}
 \usepackage{calc}
+\usepackage{qrcode}
 
 % ============================================================
 %  COLOR PALETTE — warm academic, not corporate
@@ -636,23 +637,38 @@ Central Provinces & 18 \\
   \fill[clay!80!ink] (current page.south west) rectangle ([yshift=16pt]current page.south east);
 \end{tikzpicture}
 
-\vspace{1.8cm}
-\hspace{60pt}\begin{minipage}{0.78\textwidth}
-  {\fontsize{28}{32}\selectfont\color{parchment}\textbf{Thank You}}
+\vspace{1.5cm}
+\begin{columns}[c]
+\column{0.65\textwidth}
+\hspace{60pt}\begin{minipage}{0.85\textwidth}
+  {\fontsize{32}{36}\selectfont\color{white}\textbf{Thank You}}
   
-  \vspace{6pt}
-  {\color{clay}\rule{40pt}{2.5pt}}
+  \vspace{8pt}
+  {\color{ochre}\rule{50pt}{3pt}}
   
-  \vspace{14pt}
-  {\LARGE\color{parchment}\bfseries Questions \& Discussion}
+  \vspace{16pt}
+  {\fontsize{16}{20}\selectfont\color{white}\bfseries Questions \& Discussion}
   
-  \vspace{24pt}
-  {\color{parchment}\textbf{Kabeer Bora}}\\[3pt]
-  {\color{parchment}University of Missouri--Kansas City}\\[3pt]
+  \vspace{20pt}
+  {\Large\color{white}\textbf{Kabeer Bora}}\\[4pt]
+  {\large\color{white}University of Missouri--Kansas City}\\[4pt]
   
-  \vspace{14pt}
-  {\color{parchment}\textit{Comments and suggestions are welcome.}}
+  \vspace{16pt}
+  {\normalsize\color{white}\textit{Comments and suggestions are welcome.}}
 \end{minipage}
+
+\column{0.3\textwidth}
+\centering
+\vspace{-1cm}
+\begin{tikzpicture}
+  \node[fill=white, inner sep=8pt, rounded corners=3pt] {
+    \qrcode[height=3.5cm]{https://github.com/kabeerbora/assam-presentation/raw/main/presentation.pdf}
+  };
+\end{tikzpicture}
+
+\vspace{4pt}
+{\small\color{white}\textbf{Download Slides}}
+\end{columns}
 \end{frame}
 
 \end{document}
