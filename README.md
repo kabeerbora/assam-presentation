@@ -28,9 +28,9 @@ If you use these materials, please cite:
 
 ```
 Bora, K. (2026). The Political Economy of Stagnation: Origins of the Salaried Class 
-and the Inhibition of Economic Development in Assam. Presentation at [venue].
+and the Inhibition of Economic Development in Assam. Presentation at John Jay College.
 ```
 
 ## Contact
 
-Questions and comments are welcome.
+Questions and comments are welcome. EMAIL - kabeerbora@umkc.edu 
