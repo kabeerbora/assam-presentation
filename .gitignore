@@ -1,0 +1,39 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.fdb_latexmk
+*.synctex(busy)
+*.bbl
+
+# Python
+*.pyc
+__pycache__/
+.venv/
+
+# Data files
+*.dta
+*.csv
+*.xlsx
+*.xls
+
+# PDFs except presentation
+*.pdf
+!presentation.pdf
+
+# Misc
+%OUTDIR%/
+compil.txt
+compile.bat
+extracted_text.txt
+pdf_extraction.txt
+
+# Directories
+data/
+economic_census/
+images/
+statistical_abstracts_xlsx/
+web_materials/
