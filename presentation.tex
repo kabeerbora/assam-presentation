@@ -125,12 +125,6 @@
 \begin{tikzpicture}[remember picture, overlay]
   % Background
   \fill[parchment] (current page.south west) rectangle (current page.north east);
-  % Large decorative accent block
-  \fill[ink] ([yshift=-30pt]current page.north west) rectangle ([xshift=55pt, yshift=-200pt]current page.north west);
-  % Thin gold line
-  \draw[ochre, line width=1.5pt] ([xshift=65pt, yshift=-40pt]current page.north west) -- ([xshift=65pt, yshift=-190pt]current page.north west);
-  % Bottom strip
-  \fill[clay] (current page.south west) rectangle ([yshift=20pt]current page.south east);
 \end{tikzpicture}
 
 \vspace{1.5cm}
@@ -230,20 +224,28 @@ Per Capita Income (Rs) & 107k & 159k & \textcolor{burgundy}{\textbf{23rd / 28}} 
 \column{0.5\textwidth}
 \textbf{\color{rust}The Historical Reversal}
 \begin{itemize}
-  \item \textbf{Post-Independence Era:} Assam boasted a per capita income higher than the national average, driven by primary resources and a strong tea export industry.
-  \item \textbf{The Decline:} By 1986, per capita income slipped below the national average.
-  \item \textbf{Current State:} The deficit widened to 45\% by the 1990s.
+  \item \textbf{Post-Independence:} Per capita income above national average
+  \item \textbf{Current State:} Deficit widened to 45\% by 1990s
 \end{itemize}
+
+\vspace{6pt}
+\begin{small}
+\textbf{\color{slate}Conventional Explanations:}
+\begin{itemize}
+  \item[\textcolor{slate}{\rule[0.4ex]{4pt}{0.8pt}}] Geography: landlocked, poor connectivity
+  \item[\textcolor{slate}{\rule[0.4ex]{4pt}{0.8pt}}] Resource curse: tea monoculture
+\end{itemize}
+\end{small}
 
 \column{0.45\textwidth}
 \critiquebox{Structural Stagnation}{%
-  Despite recent GSDP growth, Assam suffers from persistently low capital formation, sluggish industrialization, and a hypertrophied service sector unable to generate broad-based employment.
+ Persistently low capital formation, sluggish industrialization, hypertrophied service sector unable to generate broad-based employment.
 }
 \end{columns}
 
-\vspace{10pt}
+\vspace{8pt}
 \thesisbox{The Political Economy Thesis}{%
-  Economic underdevelopment here is rarely an accident of geography alone; it is frequently the endogenous result of institutional arrangements and the distribution of political power among competing socio-economic classes.
+  Geography and resources cannot explain why Assam failed to develop an indigenous capitalist class or why the state became captured by rent-seeking salaried elites. Underdevelopment is the endogenous result of class hegemony—institutional arrangements created a state apparatus oriented toward patronage rather than productive investment.
 }
 \end{frame}
 
@@ -295,13 +297,53 @@ Per Capita Income (Rs) & 107k & 159k & \textcolor{burgundy}{\textbf{23rd / 28}} 
 \begin{itemize}
   \item \textbf{Corv\'ee Economy:} Non-monetized labor utilization mechanism. Every adult male (\textit{paik}) was obligated to render state service for cultivable land.
   \item \textbf{Egalitarian but Rigid:} No massive class of landless agricultural laborers existed (average peasant held 2.66 acres). The Neo-Vaishnavite movement thwarted rigid caste hierarchies.
-  \item \textbf{Absence of a Salariat:} A salaried, Weberian middle class was virtually non-existent.
+  \item \textbf{Hereditary Administrative Hierarchy:} Key bureaucratic positions (Bora, Saikia, Phukan) were held by hereditary nobility. 
 \end{itemize}
 
 \column{0.4\textwidth}
-\infobox{Historical Baseline}{%
-  The old regime left behind a society deeply accustomed to state patronage (via land), but entirely unaccustomed to capital accumulation, commercial trade, or monetized administration.
+\begin{center}
+  \vspace{-6pt}
+  \includegraphics[width=\linewidth,height=0.5\textheight,keepaspectratio]{images/guha_assam.jpg}
+\end{center}
+\end{columns}
+\end{frame}
+
+% === ADMINISTRATIVE HIERARCHY ===
+\begin{frame}
+\slidetitle{The Ahom Administrative Classes \& Paik Authority}
+
+\begin{columns}[T]
+\column{0.5\textwidth}
+\textbf{\color{rust}Paik Officials \& Their Command}
+
+\vspace{6pt}
+\begin{center}
+\small
+\rowcolors{2}{cream}{parchment}
+\begin{tabular}{@{}lc@{}}
+\arrayrulecolor{warmgray}
+\toprule
+\textbf{Official} & \textbf{Paiks Commanded} \\
+\midrule
+\textbf{Phukan} & 6,000 \\
+\textbf{Rajkhowa} & 3,000 \\
+\textbf{Hazarika} & 1,000 \\
+\textbf{Saikia} & 100 \\
+\textbf{Bora} & 20 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{6pt}
+{\small\color{slate}These officials managed the corvée labor system reorganized in 1608.}
+
+\column{0.45\textwidth}
+\thesisbox{Merit vs. Heredity}{%
+  Unlike later colonial bureaucracies (which emphasized merit through examinations), the Ahom state relied exclusively on \textbf{hereditary merit}. Administrative positions were family inheritances, not competitive positions accessible to educated commoners.
 }
+
+\vspace{8pt}
+{\footnotesize\textit{\color{slate}Source: Sen, Debasis (1979). ``A Few Aspects of the Ahom Military System.'' \textit{Proceedings of the Indian History Congress}, 40: 552--556.}}
 \end{columns}
 \end{frame}
 
@@ -372,15 +414,12 @@ Cowries & 0.1 & --- & Gold \& Silver & --- & \textbf{\color{burgundy}97.4} \\
 \end{center}
 
 \vspace{8pt}
-\thesisbox{The Trade Deficit Problem}{%
+\thesisbox{No Merchant Class?}{%
   Assam ran a persistent trade deficit of 97,400 rupees, paid exclusively in gold and silver bullion. Unlike Gujarat (which had Rs. 16 million in trade via Surat), Assam had minimal global trade presence and virtually no merchant class to develop indigenous capitalism.
 }
 \end{frame}
 
-% ============================================================
 \section{Colonial Rupture}
-% ============================================================
-
 \begin{frame}
 \slidetitlesub{Colonial Rupture}{Monetization and Linguistic Displacement}
 
@@ -391,12 +430,10 @@ Cowries & 0.1 & --- & Gold \& Silver & --- & \textbf{\color{burgundy}97.4} \\
     fill=burgundy!6, inner sep=9pt, text width=5.5cm,
     rounded corners=1pt, font=\small
   ] (z) {%
-    {\bfseries\color{burgundy}The Administrative Shock}\\[4pt]
-    \begin{itemize}
-      \item[\color{burgundy}\rule[0.4ex]{4pt}{0.8pt}] British imposed a monetized economy and rational-legal bureaucracy.
-      \item[\color{burgundy}\rule[0.4ex]{4pt}{0.8pt}] Assamese population was entirely lacking in modern Western education.
-      \item[\color{burgundy}\rule[0.4ex]{4pt}{0.8pt}] Colonial state imported English-educated Bengali professionals for efficiency.
-    \end{itemize}
+    {\bfseries\color{burgundy}The Administrative Shock}\\[6pt]
+    {\color{burgundy}\textbf{--}} British imposed a monetized economy and rational-legal bureaucracy.\\[3pt]
+    {\color{burgundy}\textbf{--}} Assamese population lacked modern Western education.\\[3pt]
+    {\color{burgundy}\textbf{--}} Colonial state imported English-educated Bengali professionals.
   };
   \draw[burgundy, line width=1.2pt] (z.north west) -- (z.south west);
 \end{tikzpicture}
@@ -407,11 +444,9 @@ Cowries & 0.1 & --- & Gold \& Silver & --- & \textbf{\color{burgundy}97.4} \\
     fill=deepgreen!8, inner sep=9pt, text width=5.5cm,
     rounded corners=1pt, font=\small
   ] (r) {%
-    {\bfseries\color{deepgreen}The Assamese Response}\\[4pt]
-    \begin{itemize}
-      \item[{\color{deepgreen}\rule[0.4ex]{4pt}{0.8pt}}] Indigenous elites were profoundly marginalized (Bengali imposed as court language in 1836).
-      \item[{\color{deepgreen}\rule[0.4ex]{4pt}{0.8pt}}] Elites rapidly adapted by embracing Western education to secure salaried state positions.
-    \end{itemize}
+    {\bfseries\color{deepgreen}The Assamese Response}\\[6pt]
+    {\color{deepgreen}\textbf{--}} Indigenous elites profoundly marginalized (Bengali imposed as court language, 1836).\\[3pt]
+    {\color{deepgreen}\textbf{--}} Elites rapidly embraced Western education to secure salaried state positions.
   };
   \draw[deepgreen, line width=1.2pt] (r.north west) -- (r.south west);
 \end{tikzpicture}
@@ -419,38 +454,10 @@ Cowries & 0.1 & --- & Gold \& Silver & --- & \textbf{\color{burgundy}97.4} \\
 
 \vspace{10pt}
 \critiquebox{A State-Dependent Class}{%
-  Unlike European bourgeoisies or mercantile capitalists in western India, the Assamese middle class did not rise through mercantile trade or industrial innovation. Their prestige and security were directly tied to colonial state proximity and government salaries.
+  Unlike mercantile capitalists in western India, the Assamese middle class did not rise through mercantile trade or industrial innovation. Their prestige and security were directly tied to colonial state proximity and government salaries.
 }
 \end{frame}
 
-% ============================================================
-
-\begin{frame}
-\slidetitle{The Outsourcing of Capital}
-
-\begin{columns}[T]
-\column{0.5\textwidth}
-\begin{tikzpicture}
-  \node[
-    draw=clay, line width=1pt, rounded corners=2pt,
-    fill=parchment, inner sep=10pt, text width=0.9\linewidth, font=\small
-  ] {%
-    \textbf{\color{rust}Cultural Aversion to Enterprise}\\[6pt]
-    The periodical \textit{Awahan} recorded that educated Assamese youth viewed trade and petty commerce with deep disdain, considering entrepreneurial labor to be a \textbf{``matter of big shame''}.\\[6pt]
-    Instead of building businesses, youths wasted creative energies writing petitions to British officers begging for government posts.
-  };
-\end{tikzpicture}
-
-\column{0.5\textwidth}
-\begin{itemize}
-  \item \textbf{The Economic Vacuum:} This cultural stigmatization completely prevented the Assamese from evolving into an independent capitalist class.
-  \item \textbf{Foreign \& Immigrant Capital:} Millions of outsiders migrated to Assam to capitalize on this commercial void. Immigrant communities, notably the Marwaris, dominated trade, credit, and finance.
-  \item \textbf{Wealth Drain:} This led to the systematic draining of local wealth and thoroughly stunted the growth of an indigenous entrepreneurial ecosystem.
-\end{itemize}
-\end{columns}
-\end{frame}
-
-% ============================================================
 \section{Theoretical Frameworks}
 % ============================================================
 
@@ -492,12 +499,12 @@ Madras & 44 \\
 Bengal & 35 \\
 Central Provinces & 18 \\
 \bottomrule
-\multicolumn{2}{l}{\tiny\textit{Note: Reference data illustrating comparative literacy outcomes.}} \\
+\multicolumn{2}{l}{\small\textit{Source: Gupta (2025).}} \\
 \end{tabular}
 \end{center}
 \end{small}
 
-\vspace{12pt}
+\vspace{11pt}
 \thesisbox{The Educational Paradox in Assam}{%
   Assam produced a highly educated elite whose skill sets were exclusively tailored for the tertiary service sector. Because they culturally eschewed commerce, their human capital was never deployed to create manufacturing firms or logistics networks. Instead, education was deployed strictly as a credential to extract salaries from the state.
 }
@@ -564,7 +571,8 @@ Central Provinces & 18 \\
 \begin{tikzpicture}
   \node[
     draw=clay, line width=0.8pt, rounded corners=2pt,
-    fill=cream, inner sep=8pt, font=\small
+    fill=cream, inner sep=8pt, font=\footnotesize,
+    text width=0.85\textwidth, align=center
   ] {%
     \textbf{State Capture:} Without capitalists demanding infrastructure, the state was transformed into a vast, inefficient employment exchange.
   };
@@ -610,14 +618,15 @@ Central Provinces & 18 \\
 
 \vspace{10pt}
 \begin{itemize}
-  \item[\textcolor{rust}{\textbf{1.}}] \textbf{Path Dependency:} Assam's pre-colonial Paik system created a cultural affinity for state patronage rather than entrepreneurship.
+  \item[\textcolor{rust}{\textbf{1.}}] \textbf{Path Dependency:} Assam's pre-colonial Paik system created a cultural affinity for state patronage.
   
   \vspace{8pt}
   \item[\textcolor{rust}{\textbf{2.}}] \textbf{Class Hegemony:} Without capitalists or powerful landlords, the professional salariat achieved monopolistic control over the state apparatus.
   
   \vspace{8pt}
-  \item[\textcolor{rust}{\textbf{3.}}] \textbf{Fiscal Capture:} Nearly 60\% of state revenue is consumed by salaries and pensions, starving productive capital investment.
-  
+  \item[\textcolor{rust}{\textbf{3.}}] \textbf{Post Colonial:} Segments of the middle class unable to access stable employment grew increasingly dissatisfied, pressing the state for quotas through anti-migrant ``sons-of-soil'' movements (Fernandes 2006). In Assam, from the 1950s--1970s, middle class movements centered explicitly on job scarcity, reinforcing the structural dependence on state patronage. 
+  \vspace{8pt}
+  \item[\textcolor{rust}{\textbf{3.}}] \textbf{As Things Stand:} NRC \& CAA Protests 
 \end{itemize}
 \end{frame}
 
@@ -628,33 +637,28 @@ Central Provinces & 18 \\
 \begin{frame}[plain]
 \begin{tikzpicture}[remember picture, overlay]
   % Background
-  \fill[ink] (current page.south west) rectangle (current page.north east);
-  % Accent strip
-  \fill[clay] ([yshift=-45pt]current page.north west) rectangle ([xshift=55pt, yshift=-195pt]current page.north west);
-  % Gold line
-  \draw[ochre, line width=1.5pt] ([xshift=65pt, yshift=-55pt]current page.north west) -- ([xshift=65pt, yshift=-185pt]current page.north west);
-  % Bottom bar
-  \fill[clay!80!ink] (current page.south west) rectangle ([yshift=16pt]current page.south east);
+  \fill[parchment] (current page.south west) rectangle (current page.north east);
 \end{tikzpicture}
 
 \vspace{1.5cm}
 \begin{columns}[c]
 \column{0.65\textwidth}
 \hspace{60pt}\begin{minipage}{0.85\textwidth}
-  {\fontsize{32}{36}\selectfont\color{white}\textbf{Thank You}}
+  {\fontsize{32}{36}\selectfont\color{ink}\textbf{Thank You}}
   
   \vspace{8pt}
   {\color{ochre}\rule{50pt}{3pt}}
   
   \vspace{16pt}
-  {\fontsize{16}{20}\selectfont\color{white}\bfseries Questions \& Discussion}
+  {\fontsize{16}{20}\selectfont\color{ink}\bfseries Questions \& Discussion}
   
   \vspace{20pt}
-  {\Large\color{white}\textbf{Kabeer Bora}}\\[4pt]
-  {\large\color{white}University of Missouri--Kansas City}\\[4pt]
+  {\Large\color{ink}\textbf{Kabeer Bora}}\\[4pt]
+  {\large\color{ink}University of Missouri--Kansas City}\\[4pt]
   
   \vspace{16pt}
-  {\normalsize\color{white}\textit{Comments and suggestions are welcome.}}
+  {\normalsize\color{ink}\textit{Suggestions/Feedback Welcome!}}\\[2pt]
+  {\small\color{ink}\textit{Email: \href{kabeerbora@umkc.edu}{kabeerbora@umkc.edu}}}
 \end{minipage}
 
 \column{0.3\textwidth}
@@ -666,8 +670,9 @@ Central Provinces & 18 \\
   };
 \end{tikzpicture}
 
-\vspace{4pt}
-{\small\color{white}\textbf{Download Slides}}
+\vspace{17pt}
+
+{\small\color{ink}\textbf{Download Slides}}
 \end{columns}
 \end{frame}
 
